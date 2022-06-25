@@ -17,5 +17,15 @@
     "location": {"loremWords": { "minLength": 3, "maxLength": 10 }},
     "address": {"loremSentences": { "minLength": 100, "maxLength": 200 }},
     "status": {"int": [0, 1]}
+  },
+  "Country": {
+    "name": {"regexp": "[A-Z][a-z]{5,10}"},
+    "iso_code_2": {"regexp": "[A-Z]{2}"},
+    "lang": {"regexp": "[a-z]{2}"},
+    "order": {"int": {}},
+    "flag": {"string": {}},
+    "region": {"regexp": "[0-9]{2}"},
+    "region_name": {"regexp": "[A-Z][a-z]{5,10}"},
+    "status": {"int": [0, 1]}
   }
 }
