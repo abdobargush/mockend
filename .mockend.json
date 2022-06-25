@@ -9,5 +9,13 @@
     "path": {"regexp": "https://careers\\.test/career/[0-9]{5}/1920/1080"},
     "phone": {"regexp": "[0-9]{11}"},
     "message": {"loremSentences": { "minLength": 100, "maxLength": 200 }}
+  },
+  "Region": {
+    "name": {"regexp": "[A-Z][a-z]{5,10}"},
+    "email": {"regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"},
+    "phone": {"regexp": "[0-9]{11}"},
+    "location": {"loremWords": { "minLength": 3, "maxLength": 10 }},
+    "address": {"loremSentences": { "minLength": 100, "maxLength": 200 }},
+    "status": {"int": [0, 1]}
   }
 }
