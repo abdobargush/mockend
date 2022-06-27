@@ -67,7 +67,7 @@
     "office": {"int": {"min": 0, "max": 99}},
     "office_name": {"regexp": "[A-Z][a-z]{5,10}"}
   },
-  "New": {
+  "News": {
     "lang": {"regexp": "[a-z]{2}"},
     "title": {"loremWords": { "minLength": 3, "maxLength": 10 }},
     "author":  {"regexp": "[A-Z][a-z]{5,10} [A-Z][a-z]{5,10}"},
