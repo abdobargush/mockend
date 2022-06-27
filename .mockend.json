@@ -59,11 +59,23 @@
     "name": {"regexp": "[A-Z][a-z]{5,10}"},
     "lang": {"regexp": "[a-z]{2}"},
     "title": {"loremWords": { "minLength": 3, "maxLength": 10 }},
-    "description": {"loremSentences": { "minLength": 100, "maxLength": 200 }},
+    "description": {"loremSentences": { "minLength": 200, "maxLength": 500 }},
     "description_details": {"loremParagraphs": { "minLength": 100, "maxLength": 200 }},
     "image": {"regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"},
     "details": {"loremSentences": { "minLength": 100, "maxLength": 200 }},
     "order": {"int": {"min": 0, "max": 9}},
+    "office": {"int": {"min": 0, "max": 99}},
+    "office_name": {"regexp": "[A-Z][a-z]{5,10}"}
+  },
+  "New": {
+    "lang": {"regexp": "[a-z]{2}"},
+    "title": {"loremWords": { "minLength": 3, "maxLength": 10 }},
+    "author":  {"regexp": "[A-Z][a-z]{5,10} [A-Z][a-z]{5,10}"},
+    "description": {"loremSentences": { "minLength": 200, "maxLength": 500 }},
+    "details": {"loremParagraphs": { "minLength": 100, "maxLength": 200 }},
+    "image": {"regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"},
+    "order": {"int": {"min": 0, "max": 9}},
+    "status": {"string": ["new", "main"]}
     "office": {"int": {"min": 0, "max": 99}},
     "office_name": {"regexp": "[A-Z][a-z]{5,10}"}
   }
