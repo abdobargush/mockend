@@ -27,5 +27,32 @@
     "region": {"int": {"min": 0, "max": 99}},
     "region_name": {"regexp": "[A-Z][a-z]{5,10}"},
     "status": {"int": [0, 1]}
+  },
+  "Office": {
+    "name": {"regexp": "[A-Z][a-z]{5,10}"},
+    "slug": {"regexp": "[A-Z][a-z]{5,10}"},
+    "place": {"loremWords": { "minLength": 3, "maxLength": 10 }},
+    "lang": {"regexp": "[a-z]{2}"},
+    "order": {"int": {"min": 0, "max": 9}},
+    "about": {"loremSentences": { "minLength": 100, "maxLength": 200 }},
+    "address": {"loremSentences": { "minLength": 100, "maxLength": 200 }},
+    "email": {"regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"},
+    "phone": {"regexp": "[0-9]{11}"},
+    "location": {"loremWords": { "minLength": 3, "maxLength": 10 }},
+    "country": {"int": {"min": 0, "max": 99}},
+    "country_name": {"regexp": "[A-Z][a-z]{5,10}"},
+    "order": {"int": {"min": 0, "max": 9}},
+    "status": {"int": [0, 1]},
+    "is_main": {"int": [0, 1]},
+    "team_brief": {"loremSentences": { "minLength": 100, "maxLength": 200 }},
+    "services": {"loremSentences": { "minLength": 100, "maxLength": 200 }}
+  },
+  "Partner": {
+    "name": {"regexp": "[A-Z][a-z]{5,10}"},
+    "description": {"loremSentences": { "minLength": 100, "maxLength": 200 }},
+    "link": {"regexp": "https://partner\\.test"},
+    "image": {"regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"},
+    "office": {"int": {"min": 0, "max": 99}},
+    "office_name": {"regexp": "[A-Z][a-z]{5,10}"}
   }
 }
