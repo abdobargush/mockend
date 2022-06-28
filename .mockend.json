@@ -90,8 +90,8 @@
     "name":  {"regexp": "[A-Z][a-z]{5,10} [A-Z][a-z]{5,10}"},
     "title": {"loremSentences": { "minLength": 5, "maxLength": 10 }},
     "description": {"loremSentences": { "minLength": 200, "maxLength": 500 }},
-    "date": {"dateTime": {}},
-    "time": {"dateTime": {}},
+    "date": {"dateTime": {"min": "2012-01-01T00:00:00Z", "max": "2022-01-01T00:00:00Z"}},
+    "time": {"dateTime": {"min": "2012-01-01T00:00:00Z", "max": "2022-01-01T00:00:00Z"}},
     "office": {"int": {"min": 0, "max": 99}},
     "office_name": {"regexp": "[A-Z][a-z]{5,10}"}
   },
