@@ -78,5 +78,31 @@
     "status": {"string": ["new", "main"]},
     "office": {"int": {"min": 0, "max": 99}},
     "office_name": {"regexp": "[A-Z][a-z]{5,10}"}
+  },
+  "Client": {
+    "name":  {"regexp": "[A-Z][a-z]{5,10} [A-Z][a-z]{5,10}"},
+    "designation":  {"regexp": "[A-Z][a-z]{5,20}"},
+    "image": {"regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"},
+    "office": {"int": {"min": 0, "max": 99}},
+    "office_name": {"regexp": "[A-Z][a-z]{5,10}"}
+  },
+  "Event": {
+    "name":  {"regexp": "[A-Z][a-z]{5,10} [A-Z][a-z]{5,10}"},
+    "title": {"loremSentences": { "minLength": 5, "maxLength": 10 }},
+    "description": {"loremSentences": { "minLength": 200, "maxLength": 500 }},
+    "date": {"dateTime": {}},
+    "time": {"dateTime": {}},
+    "office": {"int": {"min": 0, "max": 99}},
+    "office_name": {"regexp": "[A-Z][a-z]{5,10}"}
+  },
+  "Brochure": {
+    "name":  {"regexp": "[A-Z][a-z]{5,10} [A-Z][a-z]{5,10}"},
+    "lang": {"regexp": "[a-z]{2}"},
+    "description": {"loremSentences": { "minLength": 200, "maxLength": 500 }},
+    "filepath": {"regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"},
+    "type": {"string": ["new", "main"]},
+    "order": {"int": {"min": 0, "max": 9}},
+    "office": {"int": {"min": 0, "max": 99}},
+    "office_name": {"regexp": "[A-Z][a-z]{5,10}"}
   }
 }
